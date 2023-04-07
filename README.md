@@ -6,3 +6,5 @@
 [![Asciinema(step 5)](https://github.com/fyodor91/python-project-49/blob/main/%5Bpp49-step5.5%5D)]
 
 [![Asciinema(step 6)](https://github.com/fyodor91/python-project-49/blob/main/%5Bpp49-step6.4%5D)]
+
+[![Asciinema(step 7)](https://github.com/fyodor91/python-project-49/blob/main/%5Bpp49-step7.5%5D)] 
