@@ -2,11 +2,11 @@
 
 import sys
 sys.path.insert(0, '/home/fyodor/python-project-49/brain_games')
-import cli
+from cli import welcome_user
 
 
 def main():
-    cli.welcome_user()
+    welcome_user()
 
 
 if __name__ == '__main__':
