@@ -2,7 +2,7 @@
 
 import sys
 sys.path.insert(0, '/home/fyodor/python-project-49/brain_games')
-from cli import welcome_user
+from brain_games.cli import welcome_user
 
 
 def main():
