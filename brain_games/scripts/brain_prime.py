@@ -3,6 +3,7 @@
 
 import prompt
 import random
+import wrong_answer
 
 
 def is_prime(value):
@@ -22,7 +23,7 @@ def main():
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
     count = 0
     while count < 3:
-        value = random.randint(2,1000) 
+        value = random.randint(2, 1000)
         print('Question: ' + str(value))
         true_answer = is_prime(value)
         answer = prompt.string('Your answer: ')
@@ -32,10 +33,10 @@ def main():
             if count == 3:
                 print('Congratulations, ' + name + '!')
         else:
-            print("'" + answer + "'" + " is wrong answer ;(. Correct answer was " + "'" + true_answer + "'.")
+            print(wrong_answer.main(answer, true_answer))
             print("Let's try again, " + name + "!")
             break
 
 
 if __name__ == '__main__':
-        main()
+    main()

@@ -9,11 +9,11 @@ def main():
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print('Hello, ' + name + '!')
-    print ('Answer "yes" if the number is even, otherwise answer "no".')
+    print('Answer "yes" if the number is even, otherwise answer "no".')
     i = 0
     while i < 3:
-        random_value = random.randint(0,1000)
-        print ('Question: ' + str(random_value))
+        random_value = random.randint(0, 1000)
+        print('Question: ' + str(random_value))
         answer = prompt.string('Your answer: ')
         if random_value % 2 == 0:
             if answer == 'yes':

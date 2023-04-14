@@ -3,6 +3,7 @@
 
 import prompt
 import random
+import wrong_answer
 
 
 def progression(begin, end, step):
@@ -19,13 +20,13 @@ def main():
     print('What number is missing in the progression?')
     count = 0
     while count < 3:
-        begin_value = random.randint(1,10)
-        step_value = random.randint(1,10)
+        begin_value = random.randint(1, 10)
+        step_value = random.randint(1, 10)
         end_value = begin_value + step_value*9 + 1
-        index_value = random.randint(0,9)
-        random_progression = progression(begin_value, end_value, step_value).split()
-        true_answer = random_progression[index_value]
-        progression_text = ' '.join(random_progression).replace(true_answer, '..', 1) 
+        index_value = random.randint(0, 9)
+        rprogression = progression(begin_value, end_value, step_value).split()
+        true_answer = rprogression[index_value]
+        progression_text = ' '.join(rprogression).replace(true_answer, '..', 1)
         print('Question: ' + str(progression_text))
         answer = prompt.string('Your answer: ')
         if answer == true_answer:
@@ -34,10 +35,10 @@ def main():
             if count == 3:
                 print('Congratulations, ' + name + '!')
         else:
-            print("'" + answer + "'" + " is wrong answer ;(. Correct answer was " + "'" + true_answer + "'.")
+            print(wrong_answer.main(answer, true_answer))
             print("Let's try again, " + name + "!")
             break
 
 
 if __name__ == '__main__':
-        main()
+    main()
