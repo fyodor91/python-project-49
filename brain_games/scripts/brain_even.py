@@ -2,39 +2,41 @@
 
 
 import prompt
-import random
+from random import randint
+
+
+def brain_even():
+    exercise = 'Answer "yes" if the number is even, otherwise answer "no".'
+    random_value = randint(0, 1000)
+    if random_value % 2 == 0:
+        true_answer = 'yes'
+    else:
+        true_answer = 'no'
+    question_text = str(random_value)
+    return exercise, (question_text, true_answer)
+
 
 
 def main():
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
-    print('Hello, ' + name + '!')
-    print('Answer "yes" if the number is even, otherwise answer "no".')
+    print(f'Hello, {name}!')
+    exercise_text = brain_even()[0]
+    print(exercise_text)
     i = 0
     while i < 3:
-        random_value = random.randint(0, 1000)
-        print('Question: ' + str(random_value))
+        question_text, true_answer = brain_even()[1]
+        print(f'Question: {question_text}')
         answer = prompt.string('Your answer: ')
-        if random_value % 2 == 0:
-            if answer == 'yes':
-                print('Correct!')
-                i += 1
-                if i == 3:
-                    print('Congratulations, ' + name + '!')
-            else:
-                print("'no' is wrong answer ;(. Correct answer was 'yes'.")
-                print("Let's try again, " + name + "!")
-                break
+        if answer == true_answer:
+            print('Correct!')
+            i += 1
+            if i == 3:
+                print(f'Congratulations, {name}!')
         else:
-            if answer == 'no':
-                print('Correct!')
-                i += 1
-                if i == 3:
-                    print('Congratulations, ' + name + '!')
-            else:
-                print("'yes' is wrong answer ;(. Correct answer was 'no'.")
-                print("Let's try again, " + name + "!")
-                break
+            print(f'"{answer}" is wrong answer ;(. Correct answer was "{true_answer}".')
+            print(f"Let's try again, {name}!")
+            break
 
 
 if __name__ == '__main__':
