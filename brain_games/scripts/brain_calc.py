@@ -3,16 +3,22 @@
 
 import prompt
 from random import randint
+from random import choice
 
 
-def brain_even():
-    exercise = 'Answer "yes" if the number is even, otherwise answer "no".'
-    random_value = randint(0, 1000)
-    if random_value % 2 == 0:
-        true_answer = 'yes'
-    else:
-        true_answer = 'no'
-    question_text = str(random_value)
+def brain_calc():
+    exercise = 'What is the result of the expression?'
+    randint_1 = randint(0, 1000)
+    randint_2 = randint(0, 1000)
+    operator_list = ['+', '-', '*']
+    random_op = choice(operator_list)
+    question_text = f'Question: {randint_1} {random_op} {randint_2}'
+    if random_op == '+':
+        true_answer = randint_1 + randint_2
+    elif random_op == '-':
+        true_answer = randint_1 - randint_2
+    elif random_op == '*':
+        true_answer = randint_1 * randint_2
     return exercise, (question_text, true_answer)
 
 
@@ -25,11 +31,11 @@ def main():
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
-    exercise_text = brain_even()[0]
+    exercise_text = brain_calc()[0]
     print(exercise_text)
     i = 0
     while i < 3:
-        question_text, true_answer = brain_even()[1]
+        question_text, true_answer = brain_calc()[1]
         print(f'Question: {question_text}')
         answer = prompt.string('Your answer: ')
         if answer == str(true_answer):
