@@ -16,11 +16,6 @@ def brain_even():
     return exercise, (question_text, true_answer)
 
 
-def wrong_answer(answer, true_answer):
-    x = f'"{answer}" is wrong answer ;(. Correct answer was "{true_answer}".'
-    return x
-
-
 def main():
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
@@ -38,7 +33,8 @@ def main():
             if i == 3:
                 print(f'Congratulations, {name}!')
         else:
-            print(wrong_answer(answer, true_answer))
+            (x, y) = (answer, true_answer)
+            print(f'"{x}" is wrong answer ;(. Correct answer was "{y}".')
             print(f"Let's try again, {name}!")
             break
 
