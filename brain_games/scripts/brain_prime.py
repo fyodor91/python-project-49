@@ -9,10 +9,10 @@ def is_prime(value):
     i = 1
     while i < value:
         if value % i == 0:
-            return 'no'
+            return 'yes'
             break
         i += 1
-    return 'yes'
+    return 'no'
 
 
 def brain_prime():
