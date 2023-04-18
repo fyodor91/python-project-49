@@ -42,7 +42,7 @@ def main():
         else:
             (x, y) = (answer, true_answer)
             print(f'"{x}" is wrong answer ;(. Correct answer was "{y}".')
-            print(f"Let's try again, {name}!")
+            print(f'Let's try again, {name}!')
             break
 
 
