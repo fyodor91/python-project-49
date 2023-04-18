@@ -6,13 +6,13 @@ from random import randint
 
 
 def is_prime(value):
-    i = 1
+    i = 2
     while i < value:
         if value % i == 0:
-            return 'yes'
+            return 'no'
             break
         i += 1
-    return 'no'
+    return 'yes'
 
 
 def brain_prime():
@@ -42,7 +42,7 @@ def main():
         else:
             (x, y) = (answer, true_answer)
             print(f'"{x}" is wrong answer ;(. Correct answer was "{y}".')
-            print(f'Let's try again, {name}!')
+            print(f"Let's try again, {name}!")
             break
 
 
