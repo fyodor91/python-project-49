@@ -16,7 +16,7 @@ def brain_progression():
     exercise = 'What number is missing in the progression?'
     begin_value = randint(1, 10)
     step_value = randint(1, 10)
-    end_value = begin_value + step_value*9 + 1
+    end_value = begin_value + step_value * 9 + 1
     index_value = randint(0, 9)
     rprogression = progression(begin_value, end_value, step_value).split()
     true_answer = rprogression[index_value]
