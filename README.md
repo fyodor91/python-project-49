@@ -3,12 +3,12 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/b98262d0795668e85f38/maintainability)](https://codeclimate.com/github/fyodor91/python-project-49/maintainability
 
-step 5 (https://asciinema.org/a/578811)
+[asciinema step 5](https://asciinema.org/a/578811)
 
-step 6 (https://asciinema.org/a/578812)
+[asciiname step 6](https://asciinema.org/a/578812)
 
-step 7 (https://asciinema.org/a/578814)
+[asciinema step 7](https://asciinema.org/a/578814)
+ 
+[askiinema step 8](https://asciinema.org/a/578816)
 
-step 8 (https://asciinema.org/a/578816)
-
-step 9 (https://asciinema.org/a/578817)
+[askiinema step 9](https://asciinema.org/a/578817)
