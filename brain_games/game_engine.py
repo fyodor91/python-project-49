@@ -17,7 +17,7 @@ def game_engine(game):
             if count == 3:
                 print(f'Congratulations, {name}!')
         else:
-            print(f"Let's try again, {name}!")
             print(f'"{answer}" is wrong answer ;(. \
 Correct answer was "{true_answer}".')
+            print(f"Let's try again, {name}!")
             break
