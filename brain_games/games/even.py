@@ -2,11 +2,17 @@ from random import randint
 
 
 TASK = 'Answer "yes" if the number is even, otherwise answer "no".'
+START = 1
+END = 1000
 
 
-def task():
-    random_value = randint(0, 1000)
-    if random_value % 2 == 0:
+def is_even(value):
+    return value % 2 == 0
+
+
+def play():
+    random_value = randint(START, END)
+    if is_even(random_value):
         true_answer = 'yes'
     else:
         true_answer = 'no'
