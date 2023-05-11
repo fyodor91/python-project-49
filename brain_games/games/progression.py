@@ -20,12 +20,13 @@ def progression(begin, end, step):
 def play():
     begin_value = randint(START, END)
     step_value = randint(START, END)
-    end_value = begin_value + step_value * (INDEX_END - INDEX_START) + \
-            INDEX_CORRECTION
+    end_value = begin_value + step_value * (INDEX_END - INDEX_START) +\
+        INDEX_CORRECTION
     index_value = randint(INDEX_START, INDEX_END)
-    random_progression = progression(begin_value, end_value, step_value).split()
+    random_progression = progression(begin_value, end_value, step_value).\
+        split()
     true_answer = random_progression[index_value]
-    progression_text = ' '.join(random_progression).replace(true_answer, \
-            '..', REPLACE_INDEX)
+    progression_text = ' '.join(random_progression).\
+        replace(true_answer, '..', REPLACE_INDEX)
     question_text = str(progression_text)
     return question_text, str(true_answer)
