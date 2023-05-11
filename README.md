@@ -21,7 +21,7 @@ If you answer incorrectly, the game will be over.
 
 In this game, you need to answer if the number is even.
 
-**[game example](https://asciinema.org/a/578811)** 
+[game example](https://asciinema.org/a/578811)
 
 
 #### Brain-calc ####
