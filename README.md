@@ -1,4 +1,4 @@
-###Download and install
+### Download and install ###
 
 
 Download Command: git clone git@github.com:fyodor91/python-project-49.git
@@ -6,7 +6,7 @@ Download Command: git clone git@github.com:fyodor91/python-project-49.git
 To install, you will need the Poetry package manager installed.
 
 
-###Launch
+### Launch ###
 
 
 To start the game you need to enter its name.
@@ -16,7 +16,7 @@ To win, you need to give three correct answers in a row.
 If you answer incorrectly, the game will be over.
 
 
-####Brain-even
+#### Brain-even ####
 
 
 In this game, you need to answer if the number is even.
@@ -24,7 +24,7 @@ In this game, you need to answer if the number is even.
 **[game example](https://asciinema.org/a/578811)** 
 
 
-####Brain-calc
+#### Brain-calc ####
 
 
 In this game you need to solve an arithmetic problem.
@@ -33,7 +33,7 @@ In this game you need to solve an arithmetic problem.
 
 
 
-####Brain-gcd
+#### Brain-gcd ####
 
 
 In this game, you need to find the greatest common divisor for two numbers.
@@ -41,14 +41,14 @@ In this game, you need to find the greatest common divisor for two numbers.
 [game example](https://asciinema.org/a/578814)
 
 
-####Brain-progression
+#### Brain-progression ####
 
 In this game you need to find the missing progression value.
 
 [game example](https://asciinema.org/a/578816)
 
 
-####Brain-prime
+#### Brain-prime ####
 
 
 In this game, you need to answer if the number is prime.
