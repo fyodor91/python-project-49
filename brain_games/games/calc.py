@@ -6,16 +6,16 @@ START = 0
 END = 1000
 
 
-def play():
-    randint_1 = randint(START, END)
-    randint_2 = randint(START, END)
+def get_question_answer():
+    number_1 = randint(START, END)
+    number_2 = randint(START, END)
     operators = '+', '-', '*'
     random_op = choice(operators)
-    question_text = f'{randint_1} {random_op} {randint_2}'
+    question_text = f'{number_1} {random_op} {number_2}'
     if random_op == '+':
-        true_answer = randint_1 + randint_2
+        true_answer = number_1 + number_2
     elif random_op == '-':
-        true_answer = randint_1 - randint_2
+        true_answer = number_1 - number_2
     elif random_op == '*':
-        true_answer = randint_1 * randint_2
+        true_answer = number_1 * number_2
     return question_text, str(true_answer)

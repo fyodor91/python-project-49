@@ -11,16 +11,16 @@ def game_engine(game):
     print(game.TASK)
     count = 0
     while count < WIN_COUNT:
-        question_text, true_answer = game.play()
+        question_text, true_answer = game.get_question_answer()
         print(f'Question: {question_text}')
         answer = prompt.string('Your answer: ')
         if answer == true_answer:
             print('Correct!')
             count += 1
-            if count == WIN_COUNT:
-                print(f'Congratulations, {name}!')
         else:
             print(f'"{answer}" is wrong answer ;(. \
 Correct answer was "{true_answer}".')
             print(f"Let's try again, {name}!")
-            break
+            return
+    if count == WIN_COUNT:
+        print(f'Congratulations, {name}!')
