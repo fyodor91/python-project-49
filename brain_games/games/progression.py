@@ -23,7 +23,7 @@ def get_question_answer():
     index_value = randint(INDEX_START, INDEX_END)
     random_progression = progression(begin_value, end_value, step_value)
     true_answer = random_progression[index_value]
-    progression_text = ' '.join(random_progression).\
-        replace(true_answer, '..', REPLACE_INDEX)
+    random_progression[index_value] = '..'
+    progression_text = ' '.join(random_progression)
     question_text = str(progression_text)
     return question_text, str(true_answer)

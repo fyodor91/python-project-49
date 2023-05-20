@@ -1,16 +1,16 @@
 import prompt
 
 
-WIN_COUNT = 3
+WINS_COUNT = 3
 
 
-def game_engine(game):
+def play_to_win(game):
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
     print(game.TASK)
     count = 0
-    while count < WIN_COUNT:
+    while count < WINS_COUNT:
         question_text, true_answer = game.get_question_answer()
         print(f'Question: {question_text}')
         answer = prompt.string('Your answer: ')
@@ -22,5 +22,4 @@ def game_engine(game):
 Correct answer was "{true_answer}".')
             print(f"Let's try again, {name}!")
             return
-    if count == WIN_COUNT:
-        print(f'Congratulations, {name}!')
+    print(f'Congratulations, {name}!')
